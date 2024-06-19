@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="pub.css">
+	<script type="text/javascript">
+	    function $(id) {
+	        return document.getElementById(id);
+	    }
+	
+	    function checkReg() {
+			var usernames=$("myname").value;
+	        var username = $("name").value;
+	        var pwd = $("word").value;
+			 var pwdConfirm = $("mypwd1").value;
+	        var checkright = true;
+	        if (username == "" || pwd == "") {
+	            alert("请确认用户名和密码输入是否正确！！");
+	            checkright = false;
+	        } else {
+	            if (username !=usernames) {
+	                alert("用户名错误！！");
+	                checkright = false;
+	            
+	            } else if (pwd != pwdConfirm) {
+	                alert("密码错误！！");
+	                checkright = false;
+	            } else {
+	                checkright = true;
+	            }
+	        }
+	        return checkright;
+	    }
+	
+	</script>
+    <style type="text/css">
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            font-weight: lighter;
+            font-family: 华文行楷;
+        }
+        fieldset {
+            width: 460px;
+            height: 190px;
+            padding: 0px 50px;
+            position: absolute;
+            left: 400px;
+            top: 260px;
+            font-size: 23px;
+        }
+        p {
+            margin: 20px 15px;
+        }
+        input {
+            color: #e58ab3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+</header>
+<form method="get" onsubmit="checkReg()">
+<h1>jay电影网登录</h1>
+<fieldset>
+    <div class="into">
+        <form>
+            <p>
+                <label>用户昵称：</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label>登录密码：</label>
+                <input type="password" name="word" id="word">
+            </p>
+            <p>
+                <input type="button" value="登录">
+                <input type="reset" value="重置">
+            </p>
+        </form>
+    </div>
+</fieldset>
+</body>
+</html>

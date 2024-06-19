@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>综艺</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+        .magazine {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .magazine-item {
+            margin: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .magazine-img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .magazine-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .magazine-date {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .magazine-type {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .magazine-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .magazine-title:hover {
+            color: #ff6600;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        .magazine-title:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>热门综艺</h1>
+<div class="magazine">
+	<div class="magazine-item">
+		<a href="moive1.html">
+	    <img class="magazine-img" src="e4.png" alt="奔跑吧">
+	    <div class="magazine-title">奔跑吧</div>
+	    <div class="magazine-date">2019年9月刊</div>
+	    <div class="magazine-type">封面</div></a>
+	</div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200y62qacy/q0035w17n2a.html">
+        <img class="magazine-img" src="e1.jpg" alt="欢乐喜剧人">
+        <div class="magazine-title">欢乐喜剧人</div>
+        <div class="magazine-date">2019年04月</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v-wb.youku.com/v_show/id_XNjEyMTQ3MzcxMg==.html">
+        <img class="magazine-img" src="e2.jpg" alt="这!就是街舞">
+        <div class="magazine-title">这!就是街舞</div>
+        <div class="magazine-date">2018年12月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200as5tv65/m0048l524x0.html">
+        <img class="magazine-img" src="e3.png" alt="哈哈哈哈哈!">
+        <div class="magazine-title">哈哈哈哈哈!</div>
+        <div class="magazine-date">2018年10月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="moive1.html">
+        <img class="magazine-img" src="e4.png" alt="奔跑吧">
+        <div class="magazine-title">奔跑吧</div>
+        <div class="magazine-date">2019年9月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200ul4rja6/z0033qsq9pv.html">
+        <img class="magazine-img" src="e5.jpg" alt="一本好书">
+        <div class="magazine-title">一本好书</div>
+        <div class="magazine-date">2018年9月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/3h84gzyvzj9ni0s/u0025xuxoi5.html">
+        <img class="magazine-img" src="e6.jpg" alt="演员的诞生">
+        <div class="magazine-title">琉璃</div>
+        <div class="magazine-date">2018年8月刊</div>
+        <div class="magazine-type">内页</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://www.mgtv.com/h/541953.html">
+        <img class="magazine-img" src="e7.jpg" alt="向往的生活">
+        <div class="magazine-title">向往的生活</div>
+        <div class="magazine-date">2019年7月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200vyynbiu/z0047k58fpz.html">
+        <img class="magazine-img" src="e8.jpg" alt="最强大脑">
+        <div class="magazine-title">最强大脑</div>
+        <div class="magazine-date">2019年6月刊</div>
+        <div class="magazine-type">内页</div></a>
+    </div>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+
+<footer>
+    <div class="footer">
+         &copy;2024 hrj&hrj&jay.com All Rights Reserved. jay电影网 版权所有
+    </div>
+</footer>
+</body>
+</html>

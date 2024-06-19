@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>电视剧</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+        .magazine {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .magazine-item {
+            margin: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .magazine-img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .magazine-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .magazine-date {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .magazine-type {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .magazine-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .magazine-title:hover {
+            color: #ff6600;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        .magazine-title:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>热门电视剧</h1>
+<div class="magazine">
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200k1kpkgp/s0046lk4qgj.html">
+        <img class="magazine-img" src="d1.jpg" alt="照亮你">
+        <div class="magazine-title">照亮你</div>
+        <div class="magazine-date">2019年04月</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc0020021a5muh/e003551o368.html">
+        <img class="magazine-img" src="d2.jpg" alt="大江大河2">
+        <div class="magazine-title">大江大河2</div>
+        <div class="magazine-date">2018年12月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://www.iqiyi.com/v_260uudpmizo.html">
+        <img class="magazine-img" src="d3.jpg" alt="赘婿">
+        <div class="magazine-title">赘婿</div>
+        <div class="magazine-date">2018年10月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc002002kqssyu/q4100dpkd26.html">
+        <img class="magazine-img" src="d4.jpg" alt="庆余年">
+        <div class="magazine-title">庆余年</div>
+        <div class="magazine-date">2019年9月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200whsp9r6/a0047l69jnp.html">
+        <img class="magazine-img" src="d5.jpg" alt="繁花">
+        <div class="magazine-title">繁花</div>
+        <div class="magazine-date">2018年9月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://www.iqiyi.com/so/q_%E7%90%89%E7%92%83">
+        <img class="magazine-img" src="d6.jpg" alt="琉璃">
+        <div class="magazine-title">琉璃</div>
+        <div class="magazine-date">2018年8月刊</div>
+        <div class="magazine-type">内页</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200z9vjb9z/j0034xxbh8j.html">
+        <img class="magazine-img" src="d7.jpg" alt="亲爱的设计师">
+        <div class="magazine-title">亲爱的设计师</div>
+        <div class="magazine-date">2019年7月刊</div>
+        <div class="magazine-type">封面</div></a>
+    </div>
+    <div class="magazine-item">
+		<a href="https://v.qq.com/x/cover/mzc00200olc62bn/k3505ur8gy3.html">
+        <img class="magazine-img" src="d8.jpg" alt="武动乾坤">
+        <div class="magazine-title">武动乾坤</div>
+        <div class="magazine-date">2019年6月刊</div>
+        <div class="magazine-type">内页</div></a>
+    </div>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+
+<footer>
+    <div class="footer">
+         &copy;2024 hrj&hrj&jay.com All Rights Reserved. jay电影网 版权所有
+    </div>
+</footer>
+</body>
+</html>

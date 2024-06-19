@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>演艺经历</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+		
+		body {
+		    font-family: Arial;
+		    background-color: #f2f2f2;
+		}
+		
+		
+		.main {
+		    max-width: 1000px;
+		    margin: 0 auto;
+		    padding: 20px;
+		    background-color: #fff;
+		    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+		}
+		
+		.star {
+		    display: flex;
+		    flex-wrap: wrap;
+		    margin-bottom: 20px;
+		    border-bottom: 1px solid #ccc;
+		    padding-bottom: 20px;
+		}
+		
+		.star-info {
+		    flex-basis: 70%;
+		    margin-left: 25px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+		
+		.name {
+		    font-size: 24px;
+		    font-weight: bold;
+		    margin-bottom: 10px;
+		}
+		
+		.introduction {
+		    font-size: 18px;
+		    text-indent: 2em;
+		}
+		
+		.quote {
+		    font-size: 18px;
+		    color: #666;
+		    margin-top: 20px;
+		}
+		
+		.quote-author {
+		    margin-top: 10px;
+		    text-align:right;
+		    font-style: italic;
+		    color: #999;
+		    font-size: 14px;
+		}
+		
+		
+		
+		
+		
+		
+		
+        article {
+            margin: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .photo {
+            float: right;
+            margin-left: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>奔跑吧</h1>
+<article>
+    <div class="photo">
+        <img src="e4.png" alt="奔跑吧" height="600">
+    </div>
+    <h2>简介</h2>
+    <ul>
+       <li>《奔跑吧兄弟》是浙江卫视引进韩国SBS电视台综艺节目《Running Man》推出的户外竞技真人秀节目，
+	   第一季由浙江卫视和韩国SBS联合制作，第二、三、四季由浙江卫视节目中心制作。第五季起更名为
+	   《奔跑吧》，由浙江卫视节目中心独立制作。</li>
+	   <li>播出频道：<a href="http://www.zjstv.com/?=">浙江卫视</a></li>
+	   <li>播出时间：每周五晚21：30</li>
+	   <li>网络播出平台：<a href="https://film.qq.com/">腾讯视频</a>，<a href="https://www.iqiyi.com/">爱奇艺</a>，
+	   <a href="https://ztv.cztv.com/?360">中国蓝TV</a>，<a href="http://www.zjstv.com/zcloud/t/Zshijierebo.html">Z视介</a></li>
+	   <li>现阶段常驻嘉宾：<a href="https://baike.baidu.com/item/%E9%83%91%E6%81%BA/73530">郑凯</a>，
+	   <a href="https://baike.baidu.com/item/%E6%9D%8E%E6%99%A8/7049">李晨</a>，
+	   <a href="https://baike.baidu.com/item/%E6%B2%99%E6%BA%A2/160030">沙溢</a>，
+	   <a href="star1.html">范丞丞</a>，
+	   <a href="https://baike.baidu.com/item/%E5%BC%A0%E7%9C%9F%E6%BA%90/5579766">张真源</a>，
+	   <a href="https://baike.baidu.com/item/%E5%AE%8B%E9%9B%A8%E7%90%A6/22849134">宋雨琦</a>，
+	   <a href="https://baike.baidu.com/item/%E7%99%BD%E9%B9%BF/19866592">白鹿</a></li>
+    </ul>
+
+    <h2>往季回顾</h2>
+    <ul>
+        <li>《奔跑吧兄弟》包括：<a href="https://v.qq.com/x/search/?q=%E5%A5%94%E8%B7%91%E5%90%A7%E5%85%84%E5%BC%9F%E7%AC%AC1%E5%
+		AD%A3&queryFrom=9">《奔跑吧兄弟第一季》</a><a href="https://v.qq.com/x/cover/mzc00200phlnrdt/m00160wal28.html">《奔跑吧兄弟第二季》</a>
+		<a href="https://v.qq.com/x/cover/mzc00200a1gnqbx/a00372fyetj.html">《奔跑吧兄弟第三季》</a>
+		<a href="https://v.qq.com/x/cover/2r45zgbm4bh0art/c0020r6osxl.html">《奔跑吧兄弟第四季》</a>。</li>
+        <li>《奔跑吧兄弟》固定主持是邓超、Angelababy（杨颖）、李晨、陈赫、郑恺、王祖蓝（第一至四季）、
+		王宝强（第一季）、包贝尔（第二季）、鹿晗（第三、四季）。节目于2014年10月10日在浙江卫视首播。</li>
+        <li>2017年2月13日，《奔跑吧兄弟》第五季起正式更名《奔跑吧》（英文名：Keep Running），
+		节目于2017年4月14日在浙江卫视首播。《奔跑吧》包括：
+		<a href="https://www.iqiyi.com/v_19rrb9zhlo.html?vfrm=pcw_album_auto&rfr=https://www.bing.com/">《奔跑吧第一季》</a>
+		<a href="https://www.iqiyi.com/v_19rrc654uc.html?vfrm=pcw_album_auto&rfr=https://www.bing.com/">《奔跑吧第二季》</a>
+		<a href="https://www.iqiyi.com/v_19rsg4hwoc.html?vfrm=pcw_album_auto&rfr=https://www.bing.com/">《奔跑吧第三季》</a>
+		<a href="https://www.iqiyi.com/v_13gi4ns9jdk.html?vfm=m_332_bing&fv=8c0aeeff542d8c03">《奔跑吧第四季》</a>
+		<a href="https://v.qq.com/x/search/?q=%E5%A5%94%E8%B7%91%E5%90%A7+%E7%AC%AC5%E5%AD%A3&stag=101&smartbox_ab=">《奔跑吧第五季》</a>
+		<a href="https://www.iqiyi.com/v_1m5gylxxqu0.html?vfrm=pcw_album_auto&rfr=https://www.bing.com/">《奔跑吧第六季》</a>
+		<a href="https://www.iqiyi.com/v_19vub7xpbjc.html?vfrm=pcw_album_auto&rfr=https://www.bing.com/">《奔跑吧第七季》</a>。
+		特别季包括：<a href="https://v.qq.com/x/cover/mzc00200izcls91/m0035o82qt7.html">《奔跑吧·黄河篇第一季》</a>
+		<a href="https://v.qq.com/x/cover/mzc002002z6j5hi/c0040ae722c.html">《奔跑吧·黄河篇第二季》</a>
+		<a href="https://v.qq.com/x/cover/mzc00200my8s5sr/e00459l7ycf.html">《奔跑吧·共同富裕篇》</a>。</li>
+    </ul>
+    <h2>节目特色</h2>
+    <ul>
+        <li>《奔跑吧兄弟》一方面更多的融入了文化元素，打造中国特色的“跑男”文化。西湖、敦煌、乌镇、洛阳、西安、
+		武汉等各地的风土民情在节目中展现，在给观众们带来快乐的同时，也极大地展现了各个地方的民俗风情；另一方面
+		把握受众心理变化，加入社会热点元素。节目在内容设计和嘉宾参与方面结合当前社会热点和舆情走向考虑，设计悬
+		念性、趣味性和时代感兼备的游戏任务，尽量多选择一些舆论认同度和关注度较高的明星艺人加入；第三方面是注重
+		健康理念的传播，提升节目正能量。“娱乐”、”阳光“、“健康”是《奔跑吧兄弟》的三个关键词。在节目中，导演组有
+		意识地强化/强调了明星和普通人通力合作，永不言弃的拼搏精神。</li>
+        <li></li>
+        <li></li>
+    </ul>
+</article>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+<footer>
+    <div class="footer">
+        &copy;2024 hrj&hrj&jay.com All Rights Reserved. jay电影网 版权所有
+    </div>
+</footer>
+</body>
+</html>
